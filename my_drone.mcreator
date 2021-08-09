@@ -38,12 +38,23 @@
           }
         ]
       }
+    },
+    {
+      "name": "RCCONNTROLLER",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rcconntroller"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.my_drone.rcconntroller": "RCCONNTROLLER"
+    }
   },
   "foldersRoot": {
     "name": "~",
