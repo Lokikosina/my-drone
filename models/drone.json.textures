@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "ni_hao",
+        "1": "bum",
+        "2": "babicka"
+      },
+      "name": "default"
+    }
+  }
+}
