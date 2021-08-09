@@ -1,0 +1,42 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:nether_star"
+    },
+    "1": {
+      "item": "minecraft:observer"
+    },
+    "2": {
+      "item": "minecraft:nether_star"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "4": {
+      "item": "minecraft:command_block"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    },
+    "6": {
+      "item": "minecraft:nether_star"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "my_drone:drone",
+    "count": 1
+  }
+}

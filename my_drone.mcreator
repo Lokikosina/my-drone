@@ -47,13 +47,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "rcconntroller"
+    },
+    {
+      "name": "Drone",
+      "type": "item",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "drone"
+    },
+    {
+      "name": "Dronecrafting",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dronecrafting"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.my_drone.rcconntroller": "RCCONNTROLLER"
+      "item.my_drone.rcconntroller": "RCCONNTROLLER",
+      "item.my_drone.drone": "Drone"
     }
   },
   "foldersRoot": {
