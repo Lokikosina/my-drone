@@ -1,0 +1,70 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Commandblockrecipe",
+      "type": "recipe",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "commandblockrecipe"
+    },
+    {
+      "name": "Dronefly",
+      "type": "procedure",
+      "sortid": 1,
+      "compiles": false,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dronefly",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {}
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "my_drone",
+    "modName": "my drone",
+    "version": "1.0.0",
+    "author": "Creator, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.mydrone",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100118117
+}

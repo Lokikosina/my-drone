@@ -1,0 +1,42 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:orange_concrete"
+    },
+    "1": {
+      "item": "minecraft:observer"
+    },
+    "2": {
+      "item": "minecraft:orange_concrete"
+    },
+    "3": {
+      "item": "minecraft:observer"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "5": {
+      "item": "minecraft:observer"
+    },
+    "6": {
+      "item": "minecraft:orange_concrete"
+    },
+    "7": {
+      "item": "minecraft:observer"
+    },
+    "8": {
+      "item": "minecraft:orange_concrete"
+    }
+  },
+  "result": {
+    "item": "minecraft:command_block",
+    "count": 1
+  }
+}
