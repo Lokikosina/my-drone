@@ -20,6 +20,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -62,11 +63,11 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.8);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0.7999999999999999);
 			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.8);
+			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.7999999999999999);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -96,6 +97,7 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 			this.goalSelector.addGoal(1,
 					new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(RCCONNTROLLERItem.block, (int) (1)).getItem()), false));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
+			this.targetSelector.addGoal(3, new HurtByTargetGoal(this).setCallsForHelp(this.getClass()));
 		}
 
 		@Override
