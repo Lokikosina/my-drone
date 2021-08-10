@@ -26,7 +26,10 @@ import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
+import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
+import net.minecraft.entity.ai.goal.LookRandomlyGoal;
+import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -74,11 +77,11 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 		@SubscribeEvent
 		public void onEntityAttributeCreation(EntityAttributeCreationEvent event) {
 			AttributeModifierMap.MutableAttribute ammma = MobEntity.func_233666_p_();
-			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 0);
-			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
+			ammma = ammma.createMutableAttribute(Attributes.MOVEMENT_SPEED, 1);
+			ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 20);
 			ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 			ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
-			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0);
+			ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 1);
 			event.put(entity, ammma.create());
 		}
 	}
@@ -116,7 +119,9 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 					return new Vector3d(dir_x, dir_y, dir_z);
 				}
 			});
-			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(4, new SwimGoal(this));
+			this.goalSelector.addGoal(5, new LeapAtTargetGoal(this, (float) 0.5));
 		}
 
 		@Override
