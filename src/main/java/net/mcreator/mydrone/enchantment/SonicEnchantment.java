@@ -24,7 +24,7 @@ public class SonicEnchantment extends MyDroneModElements.ModElement {
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.COMMON, EnchantmentType.WEAPON, slots);
+			super(Enchantment.Rarity.VERY_RARE, EnchantmentType.WEAPON, slots);
 		}
 
 		@Override
@@ -34,17 +34,17 @@ public class SonicEnchantment extends MyDroneModElements.ModElement {
 
 		@Override
 		public int getMaxLevel() {
-			return 10;
+			return 50;
 		}
 
 		@Override
 		public int calcModifierDamage(int level, DamageSource source) {
-			return level * 45;
+			return level * 50;
 		}
 
 		@Override
 		public boolean isTreasureEnchantment() {
-			return false;
+			return true;
 		}
 
 		@Override
