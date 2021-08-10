@@ -151,6 +151,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Travelblockrecepie",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "travelblockrecepie"
     }
   ],
   "variable_elements": [],
