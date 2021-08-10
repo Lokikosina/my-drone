@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "my_drone:blocks/travel_block",
+    "up": "my_drone:blocks/travel_block",
+    "north": "my_drone:blocks/travel_block",
+    "east": "my_drone:blocks/travel_block",
+    "south": "my_drone:blocks/travel_block",
+    "west": "my_drone:blocks/travel_block",
+    "particle": "my_drone:blocks/travel_block"
+  }
+}

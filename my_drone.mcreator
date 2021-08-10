@@ -74,6 +74,27 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "radiomaster"
+    },
+    {
+      "name": "Givepearl",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "givepearl",
+      "metadata": {
+        "dependencies": []
+      }
+    },
+    {
+      "name": "Transportblock",
+      "type": "block",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "transportblock"
     }
   ],
   "variable_elements": [],
@@ -82,6 +103,7 @@
     "en_us": {
       "item.my_drone.rcconntroller": "RCCONNTROLLER",
       "advancements.radiomaster.descr": "create a drone",
+      "block.my_drone.transportblock": "Transportblock",
       "advancements.radiomaster.title": "Radiomaster",
       "item.my_drone.drone": "Drone"
     }
