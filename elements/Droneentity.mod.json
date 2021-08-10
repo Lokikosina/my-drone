@@ -23,7 +23,7 @@
     "creativeTab": {
       "value": "MISC"
     },
-    "isBoss": true,
+    "isBoss": false,
     "bossBarColor": "BLUE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
@@ -100,7 +100,7 @@
     "particleAmount": 3,
     "hasAI": true,
     "aiBase": "(none)",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"218\" y=\"-92\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">100</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:RCCONNTROLLER</field></block></value></block></next></block></xml>",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"218\" y=\"-92\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:RCCONNTROLLER</field></block></value><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
