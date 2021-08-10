@@ -245,6 +245,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "idodha"
+    },
+    {
+      "name": "Nezkazenejsonic",
+      "type": "enchantment",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "nezkazenejsonic"
     }
   ],
   "variable_elements": [],
@@ -254,11 +263,12 @@
       "item.my_drone.rcconntroller": "Controller",
       "block.my_drone.transportblock": "travel_block",
       "block.my_drone.sonicmetalblock": "Sonicmetalblock",
-      "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
       "enchantment.my_drone.sonic": "Sonic",
+      "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
       "item.my_drone.sonicmetalpicaxe": "Sonicmetalpicaxe",
       "entity.my_drone.droneentity": "Droneentity",
       "item.my_drone.sonicmetalingot": "Sonicmetalingot",
+      "enchantment.my_drone.nezkazenejsonic": "Nezkazenejsonic",
       "advancements.radiomaster.descr": "create a drone",
       "block.my_drone.sonicmetal": "Sonicmetal",
       "advancements.radiomaster.title": "Radiomaster",

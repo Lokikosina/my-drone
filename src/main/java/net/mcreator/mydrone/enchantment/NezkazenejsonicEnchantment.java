@@ -11,20 +11,20 @@ import net.minecraft.enchantment.Enchantment;
 import net.mcreator.mydrone.MyDroneModElements;
 
 @MyDroneModElements.ModElement.Tag
-public class SonicEnchantment extends MyDroneModElements.ModElement {
-	@ObjectHolder("my_drone:sonic")
+public class NezkazenejsonicEnchantment extends MyDroneModElements.ModElement {
+	@ObjectHolder("my_drone:nezkazenejsonic")
 	public static final Enchantment enchantment = null;
-	public SonicEnchantment(MyDroneModElements instance) {
-		super(instance, 8);
+	public NezkazenejsonicEnchantment(MyDroneModElements instance) {
+		super(instance, 15);
 	}
 
 	@Override
 	public void initElements() {
-		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("sonic"));
+		elements.enchantments.add(() -> new CustomEnchantment(EquipmentSlotType.MAINHAND).setRegistryName("nezkazenejsonic"));
 	}
 	public static class CustomEnchantment extends Enchantment {
 		public CustomEnchantment(EquipmentSlotType... slots) {
-			super(Enchantment.Rarity.UNCOMMON, EnchantmentType.WEAPON, slots);
+			super(Enchantment.Rarity.COMMON, EnchantmentType.BREAKABLE, slots);
 		}
 
 		@Override
@@ -34,12 +34,12 @@ public class SonicEnchantment extends MyDroneModElements.ModElement {
 
 		@Override
 		public int getMaxLevel() {
-			return 10;
+			return 5;
 		}
 
 		@Override
 		public int calcModifierDamage(int level, DamageSource source) {
-			return level * 45;
+			return level * 50;
 		}
 
 		@Override
