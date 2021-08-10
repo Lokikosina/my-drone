@@ -1,0 +1,39 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:blaze_rod"
+    },
+    "2": {
+      "item": "minecraft:blaze_rod"
+    },
+    "3": {
+      "item": "minecraft:lever"
+    },
+    "4": {
+      "item": "minecraft:stone_button"
+    },
+    "5": {
+      "item": "minecraft:lever"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "minecraft:iron_ingot"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "my_drone:rcconntroller",
+    "count": 1
+  }
+}

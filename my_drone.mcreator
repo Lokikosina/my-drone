@@ -109,6 +109,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "droneentity"
+    },
+    {
+      "name": "Rccontrollerrecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rccontrollerrecipe"
     }
   ],
   "variable_elements": [],
