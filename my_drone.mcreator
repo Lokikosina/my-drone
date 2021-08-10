@@ -14,7 +14,7 @@
       "name": "Dronefly",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "dronefly",
