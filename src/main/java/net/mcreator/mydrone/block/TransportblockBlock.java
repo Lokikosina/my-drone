@@ -60,6 +60,7 @@ public class TransportblockBlock extends MyDroneModElements.ModElement {
 			int z = pos.getZ();
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
 				GivepearlProcedure.executeProcedure($_dependencies);
 			}
 		}

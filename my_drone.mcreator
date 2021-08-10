@@ -88,19 +88,24 @@
       "name": "Givepearl",
       "type": "procedure",
       "sortid": 3,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "givepearl",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
       }
     },
     {
       "name": "Droneentity",
       "type": "mob",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "droneentity"
@@ -113,6 +118,7 @@
       "item.my_drone.rcconntroller": "RCCONNTROLLER",
       "entity.my_drone.droneentity": "Droneentity",
       "advancements.radiomaster.descr": "create a drone",
+      "block.my_drone.transportblock": "Transportblock",
       "advancements.radiomaster.title": "Radiomaster",
       "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
       "item.my_drone.drone": "Drone"

@@ -2,6 +2,7 @@
   "item.my_drone.rcconntroller": "RCCONNTROLLER",
   "entity.my_drone.droneentity": "Droneentity",
   "advancements.radiomaster.descr": "create a drone",
+  "block.my_drone.transportblock": "Transportblock",
   "advancements.radiomaster.title": "Radiomaster",
   "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
   "item.my_drone.drone": "Drone"
