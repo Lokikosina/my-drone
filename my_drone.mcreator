@@ -21,6 +21,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -166,7 +170,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.my_drone.rcconntroller": "controller",
+      "item.my_drone.rcconntroller": "Controller",
       "entity.my_drone.droneentity": "Droneentity",
       "advancements.radiomaster.descr": "create a drone",
       "block.my_drone.transportblock": "travel_block",
