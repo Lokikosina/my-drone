@@ -25,10 +25,14 @@ public class GivepearlProcedure extends MyDroneModElements.ModElement {
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (entity instanceof PlayerEntity) {
-			ItemStack _setstack = new ItemStack(Items.ENDER_PEARL, (int) (1));
-			_setstack.setCount((int) 0.1);
-			ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+		if ((!((entity instanceof PlayerEntity)
+				? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.ENDER_PEARL, (int) (1)))
+				: false))) {
+			if (entity instanceof PlayerEntity) {
+				ItemStack _setstack = new ItemStack(Items.ENDER_PEARL, (int) (1));
+				_setstack.setCount((int) 1);
+				ItemHandlerHelper.giveItemToPlayer(((PlayerEntity) entity), _setstack);
+			}
 		}
 	}
 }
