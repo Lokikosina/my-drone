@@ -104,7 +104,11 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 		protected void registerGoals() {
 			super.registerGoals();
 			this.goalSelector.addGoal(1,
+<<<<<<< HEAD
 					new TemptGoal(this, 100, Ingredient.fromItems(new ItemStack(RCCONNTROLLERItem.block, (int) (1)).getItem()), false));
+=======
+					new TemptGoal(this, 5, Ingredient.fromItems(new ItemStack(RCCONNTROLLERItem.block, (int) (1)).getItem()), false));
+>>>>>>> stash
 		}
 
 		@Override
