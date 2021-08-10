@@ -27,10 +27,10 @@
     "bossBarColor": "BLUE",
     "bossBarType": "PROGRESS",
     "equipmentMainHand": {
-      "value": "Items.BOW"
+      "value": ""
     },
     "equipmentOffHand": {
-      "value": "Items.ARROW"
+      "value": ""
     },
     "equipmentHelmet": {
       "value": ""
@@ -49,11 +49,11 @@
     "attackStrength": 3,
     "attackKnockback": 0.0,
     "knockbackResistance": 0.0,
-    "movementSpeed": 1.0,
+    "movementSpeed": 0.0,
     "armorBaseValue": 0.0,
     "trackingRange": 64,
-    "health": 20,
-    "xpAmount": 2000,
+    "health": 10,
+    "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
     "guiBoundTo": "<NONE>",
@@ -77,7 +77,7 @@
     "immuneToWither": true,
     "immuneToDragonBreath": true,
     "mobDrop": {
-      "value": "Blocks.COMMAND_BLOCK"
+      "value": ""
     },
     "livingSound": {
       "value": "entity.bat.takeoff"
@@ -91,16 +91,19 @@
     "stepSound": {
       "value": ""
     },
-    "spawnParticles": true,
+    "spawnParticles": false,
     "particleToSpawn": {
-      "value": "FLASH"
+      "value": "CLOUD"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
     "particleAmount": 3,
+    "whenMobIsHurt": {
+      "name": "Low"
+    },
     "hasAI": true,
-    "aiBase": "Wolf",
-    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"218\" y=\"-92\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:RCCONNTROLLER</field></block></value><next><block type=\"look_around\"><field name=\"condition\">null,null</field><next><block type=\"swim_in_water\"><field name=\"condition\">null,null</field><next><block type=\"leap_at_target\"><field name=\"speed\">0.5</field><field name=\"condition\">null,null</field></block></next></block></next></block></next></block></next></block></xml>",
+    "aiBase": "(none)",
+    "aixml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"aitasks_container\" deletable=\"false\" x=\"218\" y=\"-92\"><next><block type=\"follow_item_in_hands\"><field name=\"speed\">1</field><field name=\"scared\">FALSE</field><field name=\"condition\">null,null</field><value name=\"item\"><block type=\"mcitem_all\"><field name=\"value\">CUSTOM:RCCONNTROLLER</field></block></value><next><block type=\"wander\"><field name=\"speed\">0.8</field><field name=\"condition\">null,null</field></block></next></block></next></block></xml>",
     "breedable": false,
     "tameable": false,
     "breedTriggerItems": [],
