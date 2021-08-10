@@ -11,10 +11,9 @@ import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.ILivingEntityData;
-import net.minecraft.entity.EntityType;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.AgeableEntity;
 
+import net.mcreator.mydrone.entity.DroneentityEntity;
 import net.mcreator.mydrone.MyDroneModElements;
 import net.mcreator.mydrone.MyDroneMod;
 
@@ -54,7 +53,7 @@ public class DroneflyProcedure extends MyDroneModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (world instanceof ServerWorld) {
-			Entity entityToSpawn = new AgeableEntity(EntityType.ZOMBIE, (World) world);
+			Entity entityToSpawn = new DroneentityEntity.CustomEntity(DroneentityEntity.entity, (World) world);
 			entityToSpawn.setLocationAndAngles(x, y, z, world.getRandom().nextFloat() * 360F, 0);
 			if (entityToSpawn instanceof MobEntity)
 				((MobEntity) entityToSpawn).onInitialSpawn((ServerWorld) world, world.getDifficultyForLocation(entityToSpawn.getPosition()),

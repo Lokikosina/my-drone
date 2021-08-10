@@ -14,7 +14,7 @@
       "name": "Dronefly",
       "type": "procedure",
       "sortid": 1,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "dronefly",
@@ -74,6 +74,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "radiomaster"
+    },
+    {
+      "name": "Droneentity",
+      "type": "mob",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "droneentity"
     }
   ],
   "variable_elements": [],
@@ -81,8 +90,10 @@
   "language_map": {
     "en_us": {
       "item.my_drone.rcconntroller": "RCCONNTROLLER",
+      "entity.my_drone.droneentity": "Droneentity",
       "advancements.radiomaster.descr": "create a drone",
       "advancements.radiomaster.title": "Radiomaster",
+      "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
       "item.my_drone.drone": "Drone"
     }
   },
