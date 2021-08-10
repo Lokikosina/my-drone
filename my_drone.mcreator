@@ -164,6 +164,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "travelblockrecepie"
+    },
+    {
+      "name": "Sonicmetalpicaxe",
+      "type": "tool",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetalpicaxe"
     }
   ],
   "variable_elements": [],
@@ -171,6 +180,7 @@
   "language_map": {
     "en_us": {
       "item.my_drone.rcconntroller": "Controller",
+      "item.my_drone.sonicmetalpicaxe": "Sonicmetalpicaxe",
       "entity.my_drone.droneentity": "Droneentity",
       "advancements.radiomaster.descr": "create a drone",
       "block.my_drone.transportblock": "travel_block",
