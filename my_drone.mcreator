@@ -88,7 +88,7 @@
       "name": "Givepearl",
       "type": "procedure",
       "sortid": 3,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "givepearl",
@@ -100,7 +100,7 @@
       "name": "Droneentity",
       "type": "mob",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "droneentity"
