@@ -157,7 +157,7 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.my_drone.rcconntroller": "RCCONNTROLLER",
+      "item.my_drone.rcconntroller": "controller",
       "entity.my_drone.droneentity": "Droneentity",
       "advancements.radiomaster.descr": "create a drone",
       "block.my_drone.transportblock": "Transportblock",

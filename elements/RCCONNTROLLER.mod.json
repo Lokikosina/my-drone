@@ -5,7 +5,7 @@
     "renderType": 0,
     "texture": "bez_nazvu",
     "customModelName": "Normal",
-    "name": "RCCONNTROLLER",
+    "name": "controller",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "MISC"
