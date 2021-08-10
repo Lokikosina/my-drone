@@ -1,0 +1,42 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "1": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "2": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "3": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "4": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "5": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "6": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "7": {
+      "item": "my_drone:sonicmetalingot"
+    },
+    "8": {
+      "item": "my_drone:sonicmetalingot"
+    }
+  },
+  "result": {
+    "item": "my_drone:sonicmetalblock",
+    "count": 1
+  }
+}

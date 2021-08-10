@@ -1,0 +1,12 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "my_drone:sonicmetal"
+  },
+  "result": {
+    "item": "my_drone:sonicmetalingot"
+  }
+}

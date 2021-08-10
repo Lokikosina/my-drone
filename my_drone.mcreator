@@ -173,6 +173,78 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sonicmetalpicaxe"
+    },
+    {
+      "name": "Sonic",
+      "type": "enchantment",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonic"
+    },
+    {
+      "name": "Sonicmetal",
+      "type": "block",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetal"
+    },
+    {
+      "name": "Sonicmetalingot",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetalingot"
+    },
+    {
+      "name": "Sonicmetalpicaxerecepie",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetalpicaxerecepie"
+    },
+    {
+      "name": "Sonicmetalcrafting",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetalcrafting"
+    },
+    {
+      "name": "Sonicmetalblock",
+      "type": "block",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicmetalblock"
+    },
+    {
+      "name": "Sonicblockcrafting",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sonicblockcrafting"
+    },
+    {
+      "name": "Idodha",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "idodha"
     }
   ],
   "variable_elements": [],
@@ -180,12 +252,16 @@
   "language_map": {
     "en_us": {
       "item.my_drone.rcconntroller": "Controller",
+      "block.my_drone.transportblock": "travel_block",
+      "block.my_drone.sonicmetalblock": "Sonicmetalblock",
+      "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
+      "enchantment.my_drone.sonic": "Sonic",
       "item.my_drone.sonicmetalpicaxe": "Sonicmetalpicaxe",
       "entity.my_drone.droneentity": "Droneentity",
+      "item.my_drone.sonicmetalingot": "Sonicmetalingot",
       "advancements.radiomaster.descr": "create a drone",
-      "block.my_drone.transportblock": "travel_block",
+      "block.my_drone.sonicmetal": "Sonicmetal",
       "advancements.radiomaster.title": "Radiomaster",
-      "item.my_drone.droneentity_spawn_egg": "Droneentity Spawn Egg",
       "item.my_drone.drone": "Drone"
     }
   },

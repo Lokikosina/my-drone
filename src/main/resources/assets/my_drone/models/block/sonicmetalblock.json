@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "my_drone:blocks/sonic_metal_block",
+    "up": "my_drone:blocks/sonic_metal_block",
+    "north": "my_drone:blocks/sonic_metal_block",
+    "east": "my_drone:blocks/sonic_metal_block",
+    "south": "my_drone:blocks/sonic_metal_block",
+    "west": "my_drone:blocks/sonic_metal_block",
+    "particle": "my_drone:blocks/sonic_metal_block"
+  }
+}

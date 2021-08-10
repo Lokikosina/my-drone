@@ -1,0 +1,16 @@
+{
+  "group": "my_drone",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "my_drone:sonicmetalblock"
+    }
+  },
+  "result": {
+    "item": "my_drone:sonicmetalingot",
+    "count": 9
+  }
+}
