@@ -14,7 +14,7 @@
       "name": "Dronefly",
       "type": "procedure",
       "sortid": 1,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "dronefly",
@@ -65,6 +65,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dronecrafting"
+    },
+    {
+      "name": "Radiomaster",
+      "type": "achievement",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "radiomaster"
     }
   ],
   "variable_elements": [],
@@ -72,6 +81,8 @@
   "language_map": {
     "en_us": {
       "item.my_drone.rcconntroller": "RCCONNTROLLER",
+      "advancements.radiomaster.descr": "create a drone",
+      "advancements.radiomaster.title": "Radiomaster",
       "item.my_drone.drone": "Drone"
     }
   },
