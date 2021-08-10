@@ -14,6 +14,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
@@ -22,6 +23,7 @@ import net.minecraft.network.IPacket;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
 import net.minecraft.entity.projectile.PotionEntity;
+import net.minecraft.entity.passive.WolfEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -32,13 +34,14 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.mydrone.item.RCCONNTROLLERItem;
 import net.mcreator.mydrone.entity.renderer.DroneentityRenderer;
 import net.mcreator.mydrone.MyDroneModElements;
+
+import java.util.Random;
 
 @MyDroneModElements.ModElement.Tag
 public class DroneentityEntity extends MyDroneModElements.ModElement {
@@ -80,7 +83,7 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 		}
 	}
 
-	public static class CustomEntity extends CreatureEntity {
+	public static class CustomEntity extends WolfEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -103,7 +106,17 @@ public class DroneentityEntity extends MyDroneModElements.ModElement {
 			super.registerGoals();
 			this.goalSelector.addGoal(1,
 					new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(RCCONNTROLLERItem.block, (int) (1)).getItem()), false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8));
+			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 0.8, 20) {
+				@Override
+				protected Vector3d getPosition() {
+					Random random = CustomEntity.this.getRNG();
+					double dir_x = CustomEntity.this.getPosX() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_y = CustomEntity.this.getPosY() + ((random.nextFloat() * 2 - 1) * 16);
+					double dir_z = CustomEntity.this.getPosZ() + ((random.nextFloat() * 2 - 1) * 16);
+					return new Vector3d(dir_x, dir_y, dir_z);
+				}
+			});
+			this.goalSelector.addGoal(3, new RandomWalkingGoal(this, 0.8));
 		}
 
 		@Override
