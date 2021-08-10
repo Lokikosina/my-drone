@@ -178,7 +178,7 @@
       "name": "Sonic",
       "type": "enchantment",
       "sortid": 8,
-      "compiles": true,
+      "compiles": false,
       "locked_code": false,
       "ids": {},
       "registry_name": "sonic"
