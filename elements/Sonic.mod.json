@@ -7,7 +7,7 @@
     "rarity": "VERY_RARE",
     "minLevel": 1,
     "maxLevel": 50,
-    "damageModifier": 50,
+    "damageModifier": 100,
     "compatibleEnchantments": [],
     "compatibleItems": [],
     "isTreasureEnchantment": true,

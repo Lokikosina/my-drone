@@ -39,7 +39,7 @@ public class SonicEnchantment extends MyDroneModElements.ModElement {
 
 		@Override
 		public int calcModifierDamage(int level, DamageSource source) {
-			return level * 50;
+			return level * 100;
 		}
 
 		@Override
